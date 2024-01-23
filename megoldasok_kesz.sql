@@ -1,7 +1,8 @@
 ﻿-- A feladatok megoldása elkészített SQL parancsokat illessze be a feladatok után
 
 -- 2. feladat:
-
+    INSERT INTO allomasok(id, nev, tipus, orszag, mukodo) VALUES
+    (5000, "Moszkva", "állomás", null,0);
 
 -- 3. feladat:
 
