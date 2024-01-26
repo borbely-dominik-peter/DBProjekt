@@ -2,13 +2,15 @@
 
 -- 2. feladat:
     INSERT INTO allomasok(id, nev, tipus, orszag, mukodo) VALUES
-    (5000, "Moszkva", "állomás", null,0);
+    (5000, "Moszkva", "állomás", "RUS",0);
 
 -- 3. feladat:
-
+    UPDATE allomasok SET mukodo = 1
+    WHERE id = 5000;
 
 -- 4. feladat:
-
+    DELETE FROM allomasok 
+    WHERE id = 5000;
 
 -- 5. feladat:
 
