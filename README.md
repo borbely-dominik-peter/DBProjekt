@@ -1,6 +1,5 @@
 # DBProjekt
 
-
 ## 2. feladat:
 
   A MÁV 6 hónapra kibérelte a moszkvai vasúállomás 42. peronját.
@@ -30,5 +29,3 @@
 ## 10. feladat:
 
 ## 11. feladat:
-
-
