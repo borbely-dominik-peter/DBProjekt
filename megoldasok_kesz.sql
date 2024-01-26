@@ -2,7 +2,7 @@
 
 -- 2. feladat:
     INSERT INTO allomasok(id, nev, tipus, orszag, mukodo) VALUES
-    (5000, "Moszkva", "állomás", null,0);
+    (5000, "Moszkva", "állomás", "RUS",0);
 
 -- 3. feladat:
 
