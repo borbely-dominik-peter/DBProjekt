@@ -1,5 +1,9 @@
 # DBProjekt
 
+## Adatbázis diagram:
+
+![Adatbázis-Diagram](Diagram.PNG)
+
 ## 2. feladat:
 
   A MÁV 6 hónapra kibérelte a moszkvai vasúállomás 42. peronját.
