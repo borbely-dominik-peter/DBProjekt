@@ -23,10 +23,13 @@
 ## 5. feladat:
 
   A feladat elkészítéséhez használt egyik forrás azt írja, hogy „Szeged-Feketehalom” 
-  megállóhely sosem létezett. Törölje az allomas és a hely táblákból a rá vonatkozó adatokat! 
+  megállóhely sosem létezett. Törölje az **allomas** és a **hely** táblákból a rá vonatkozó adatokat! 
   A feladat megoldásához nem kell lekérdezést készítenie. 
 
 ## 6. feladat:
+  Készítsen lekérdezést, amely az adatbázisban tárolt adatok alapján megjeleníti a jelenleg 
+  Magyarországon kívül található állomások nevét és ország jelét, az állomásnév szerint 
+  ábécérendben! 
 
 ## 7. feladat:
 
