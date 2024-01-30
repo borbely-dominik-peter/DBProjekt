@@ -13,7 +13,11 @@
     WHERE id = 5000;
 
 -- 5. feladat:
+    DELETE FROM allomasok
+    WHERE id = 2324;
 
+    DELETE FROM helyek
+    WHERE allomasid = 2324;
 
 -- 6. feladat:
 
