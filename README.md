@@ -22,6 +22,10 @@
 
 ## 5. feladat:
 
+  A feladat elkészítéséhez használt egyik forrás azt írja, hogy „Szeged-Feketehalom” 
+  megállóhely sosem létezett. Törölje az allomas és a hely táblákból a rá vonatkozó adatokat! 
+  A feladat megoldásához nem kell lekérdezést készítenie. 
+
 ## 6. feladat:
 
 ## 7. feladat:
