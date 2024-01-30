@@ -6,15 +6,15 @@ USE vasutvonal;
  
 CREATE TABLE allomasok (
   id int(11),
-  nev varchar(100),
-  tipus varchar(100),
-  orszag varchar(100),
+  nev varchar(40),
+  tipus varchar(40),
+  orszag varchar(40),
   mukodo boolean,
   PRIMARY KEY(id)
 );
 
 CREATE TABLE vonalak(
-  id varchar(100),
+  id varchar(40),
   kisvasut boolean,
   mukodo boolean,
   PRIMARY KEY(id)
@@ -22,16 +22,14 @@ CREATE TABLE vonalak(
 
 CREATE TABLE helyek(
   id int(11),
-  vonalId varchar(100),
+  vonalId varchar(40),
   allomasId int(11),
   tav int(11),
-  PRIMARY KEY(id)
-  -- CONSTRAINT fk_helyek_allomasok FOREIGN KEY (allomasId) REFERENCES allomasok(id),
-  -- CONSTRAINT fk_helyek_vonalak FOREIGN KEY (vonalId) REFERENCES vonalak(id)
+  PRIMARY KEY(vonalId, allomasId)
 );
 
-
-
+ALTER TABLE helyek ADD CONSTRAINT fk_helyek_allomasok FOREIGN KEY (allomasId) REFERENCES allomasok(id);
+ALTER TABLE helyek ADD CONSTRAINT fk_helyek_vonalak FOREIGN KEY (vonalId) REFERENCES vonalak(id);
 
 
  INSERT INTO allomasok(id, nev, tipus, orszag, mukodo) VALUES
@@ -6479,6 +6477,3 @@ INSERT INTO helyek(id, vonalId, allomasId, tav) VALUES
 ( 3354,"100",3046,255),
 ( 3355,"100",3047,263),
 ( 3356,"100",2183,270);
-
-ALTER TABLE helyek ADD CONSTRAINT fk_helyek_allomasok FOREIGN KEY (allomasId) REFERENCES allomasok(id);
-ALTER TABLE helyek ADD CONSTRAINT fk_helyek_vonalak FOREIGN KEY (vonalId) REFERENCES vonalak(id);
