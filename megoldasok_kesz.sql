@@ -20,6 +20,12 @@
     WHERE allomasid = 2324;
 
 -- 6. feladat:
+    SELECT
+      allomasok.orszag,
+      allomasok.nev
+    FROM allomasok
+    WHERE allomasok.orszag IS NOT NULL
+    ORDER BY allomasok.nev;
 
 
 -- 7. feladat:
