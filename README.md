@@ -2,7 +2,7 @@
 
 ## Adatbázis diagram:
 
-![Adatbázis-Diagram](/../Diagram.PNG)
+![Adatbázis-Diagram](../Diagram.PNG)
 
 ## 2. feladat:
 
