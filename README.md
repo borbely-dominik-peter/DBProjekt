@@ -31,6 +31,8 @@
   Magyarországon kívül található állomások nevét és ország jelét, az állomásnév szerint 
   ábécérendben! 
 
+  ![Adatbázis-Diagram](F6_2IMG.PNG)
+
 ## 7. feladat:
 
 ## 8. feladat:
