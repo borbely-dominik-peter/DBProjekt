@@ -34,6 +34,9 @@
   ![F6](F6_2IMG.png)
 
 ## 7. feladat:
+  A 80-as vonal az egyik leghosszabb hazánkban. Készítsen lekérdezést, amely a kiinduló 
+  állomástól mért távolság sorrendjében megjeleníti a működő állomások nevét, típusát és az 
+  indulási állomástól mért távolságát!
 
 ## 8. feladat:
 
