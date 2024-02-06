@@ -29,6 +29,15 @@
 
 
 -- 7. feladat:
+    SELECT
+      allomasok.tipus,
+      allomasok.nev,
+      helyek.tav
+    FROM helyek
+      INNER JOIN allomasok
+        ON helyek.allomasId = allomasok.id
+    WHERE allomasok.mukodo = 1
+    ORDER BY helyek.tav;
 
 
 -- 8. feladat:
