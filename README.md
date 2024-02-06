@@ -44,7 +44,7 @@
   Készítsen lekérdezést, amely megadja az egyes vonalak hosszát, azaz az első és az utolsó 
   hely távolságát! Jelenítse meg a vonal azonosítóját és a hossz értékét!
 
-  ![F8](F8_IMG.png)
+  ![F8](F8_IMG.PNG)
 
 ## 9. feladat:
 
