@@ -38,7 +38,7 @@
   állomástól mért távolság sorrendjében megjeleníti a működő állomások nevét, típusát és az 
   indulási állomástól mért távolságát!
 
-  ![F7](F7_IMG.png)
+  ![F7](F7_IMG.PNG)
 
 ## 8. feladat:
 
