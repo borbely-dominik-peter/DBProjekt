@@ -41,6 +41,10 @@
   ![F7](F7_IMG.PNG)
 
 ## 8. feladat:
+  Készítsen lekérdezést, amely megadja az egyes vonalak hosszát, azaz az első és az utolsó 
+  hely távolságát! Jelenítse meg a vonal azonosítóját és a hossz értékét!
+
+  ![F8](F8_IMG.png)
 
 ## 9. feladat:
 
