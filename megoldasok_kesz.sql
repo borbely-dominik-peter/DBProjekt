@@ -41,6 +41,14 @@
 
 
 -- 8. feladat:
+    SELECT
+      MAX(helyek.tav) AS hossz,
+      helyek.vonalId
+    FROM helyek
+      INNER JOIN vonalak
+        ON helyek.vonalId = vonalak.id
+    GROUP BY helyek.vonalId
+    ORDER BY helyek.tav;
 
 
 -- 9. feladat:
