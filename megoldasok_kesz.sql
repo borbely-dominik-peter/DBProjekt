@@ -54,9 +54,23 @@
 -- 9. feladat:
 
 
+
 -- 10. feladat:
+    SELECT
+      allomasok.nev,
+      helyek.vonalId,
+      helyek.allomasId
+    FROM helyek
+      INNER JOIN allomasok
+        ON helyek.allomasId = allomasok.id
+      INNER JOIN vonalak
+        ON helyek.vonalId = vonalak.id
+    WHERE helyek.vonalId = "80" AND allomasok.nev NOT LIKE "Hatvan";
 
 
 -- 11. feladat:
+
+
+-- 12. feladat:
 
 
