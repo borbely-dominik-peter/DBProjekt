@@ -49,6 +49,10 @@
 ## 9. feladat:
 
 ## 10. feladat:
+  Készítsen lekérdezést, amely megadja, hogy melyik állomás része legalább 5 
+  vasútvonalnak! Az állomás nevét és a vonalak számát jelenítse meg darabszám szerint 
+  csökkenő sorrendben!
+  ![F10](F10_IMG.PNG)
 
 ## 11. feladat:
 
