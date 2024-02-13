@@ -82,5 +82,15 @@
 
 
 -- 12. feladat:
+    SELECT
+      allomasok.nev,
+      COUNT(helyek.vonalId) AS db
+    FROM helyek
+      INNER JOIN allomasok
+        ON helyek.allomasId = allomasok.id
+    GROUP BY allomasok.nev
+    HAVING db >= 5
+    ORDER BY db DESC;
+
 
 
