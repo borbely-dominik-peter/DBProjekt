@@ -1,5 +1,17 @@
 # DBProjekt
 
+## Adatbázis táblák:
+
+### allomas(id, nev, tipus, orszag, mukodo)
+| azonosító | típus       | leírás                                                                                       |
+|-----------|-------------|----------------------------------------------------------------------------------------------|
+| id        | int(11)     | Az állomás azonosítója (szám), ez a kulcs                                                    |
+| nev       | varchar(40) | Az állomás neve (szöveg); a nevek egyediek                                                   |
+| tipus     | varchar(40) | Az állomás típusa (szöveg); megmutatja, hogy a vasúti forgalomban milyen szerepet töltött be |
+| orszag    | varchar(40) | Az állomás országa (szöveg)                                                                  |
+| mukodo    | tinyint(1)  | Az állomás működési állapota (logikai), ha működik, akkor értéke igaz                        |
+|           |             |                                                                                              |
+
 ## Adatbázis diagram:
 
 ![Adatbázis-Diagram](Diagram.PNG)
