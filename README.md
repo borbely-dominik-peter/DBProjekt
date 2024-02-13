@@ -16,8 +16,8 @@
 | vonalid   | Annak a vasútvonalnak az azonosítója, ahol a hely található (szöveg)    |
 | allomasid | Annak az állomásnak az azonosítója, amelyik az adott helyen van (szám)  |
 | tav       | A hely kilométerben mért távolsága a vonal indulási állomásától (szám); |
-|           | az indulási állomáshoz tartozó távolság 0 km. Értéke a hely km-re       |
-|           | kerekített távolsága                                                    |
+|            az indulási állomáshoz tartozó távolság 0 km. Értéke a hely km-re       |
+|            kerekített távolsága                                                    |
 
 ## Adatbázis diagram:
 
