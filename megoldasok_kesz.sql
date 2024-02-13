@@ -83,14 +83,15 @@
 
 -- 12. feladat:
     SELECT
-      allomasok.nev,
-      COUNT(helyek.vonalId) AS db
+      helyek.tav,
+      allomasok.nev
     FROM helyek
       INNER JOIN allomasok
         ON helyek.allomasId = allomasok.id
-    GROUP BY allomasok.nev
-    HAVING db >= 5
-    ORDER BY db DESC;
-
+      INNER JOIN vonalak
+        ON helyek.vonalId = vonalak.id
+    WHERE helyek.vonalId = 140
+    AND helyek.tav > 90
+    AND helyek.tav <= 100;
 
 
