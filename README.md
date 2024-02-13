@@ -63,3 +63,12 @@
   ![F11](F11_IMG.PNG)
   
 ## 12. feladat:
+  Napjainkban két állomás közötti jegyet kell váltani, de régebben a jegy egy adott 
+  távolságintervallumon volt érvényes: 5, 10, 20, …, 90, 100, … km-es jegyeket lehetett 
+  venni. Ha valaki 100 km távolságra szóló jegyet vett, akkor bizonyára távolabb utazott, mint 
+  90 km (mert az volt az azt közvetlenül megelőző, 100 km-nél rövidebb távra szóló jegy), 
+  de a 100 km-t nem léphette túl. Készítsen lekérdezést, amelyik megadja, hogy a 140-es 
+  vonal indulási állomásától hova utazhatott az, aki 100 km-es jegyet vett! Adja meg az 
+  állomások nevét és a távolságát!
+
+  ![F12](F12_IMG.PNG)

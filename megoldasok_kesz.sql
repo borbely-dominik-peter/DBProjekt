@@ -82,5 +82,16 @@
 
 
 -- 12. feladat:
+    SELECT
+      helyek.tav,
+      allomasok.nev
+    FROM helyek
+      INNER JOIN allomasok
+        ON helyek.allomasId = allomasok.id
+      INNER JOIN vonalak
+        ON helyek.vonalId = vonalak.id
+    WHERE helyek.vonalId = 140
+    AND helyek.tav > 90
+    AND helyek.tav <= 100;
 
 
