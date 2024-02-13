@@ -13,7 +13,7 @@
 
 ### hely (id, vonalid, allomasid, tav)
 | azonosító | típus       | leírás                                                                                                                                                         |
-|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | id        | int(11)     | A vonal egy helyének azonosítója (szám), ez a kulcs                                                                                                            |
 | vonalid   | varchar(40) | Annak a vasútvonalnak az azonosítója, ahol a hely található (szöveg)                                                                                           |
 | allomasid | int(11)     | Annak az állomásnak az azonosítója, amelyik az adott helyen van (szám)                                                                                         |
