@@ -11,13 +11,11 @@
 | orszag    | varchar(40) | Az állomás országa (szöveg)                                                                  |
 | mukodo    | tinyint(1)  | Az állomás működési állapota (logikai), ha működik, akkor értéke igaz                        |
 
-| id        | A vonal egy helyének azonosítója (szám), ez a kulcs                     |
-|-----------|-------------------------------------------------------------------------|
-| vonalid   | Annak a vasútvonalnak az azonosítója, ahol a hely található (szöveg)    |
-| allomasid | Annak az állomásnak az azonosítója, amelyik az adott helyen van (szám)  |
-| tav       | A hely kilométerben mért távolsága a vonal indulási állomásától (szám); |
-|            az indulási állomáshoz tartozó távolság 0 km. Értéke a hely km-re       |
-|            kerekített távolsága                                                    |
+| id        | A vonal egy helyének azonosítója (szám), ez a kulcs                                                                                                            |
+|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| vonalid   | Annak a vasútvonalnak az azonosítója, ahol a hely található (szöveg)                                                                                           |
+| allomasid | Annak az állomásnak az azonosítója, amelyik az adott helyen van (szám)                                                                                         |
+| tav       | A hely kilométerben mért távolsága a vonal indulási állomásától (szám) az indulási állomáshoz tartozó távolság 0 km. Értéke a hely km-rekerekített távolsága ; |
 
 ## Adatbázis diagram:
 
