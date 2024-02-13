@@ -49,9 +49,9 @@
 ## 9. feladat:
 
 ## 10. feladat:
-  Készítsen lekérdezést, amely megadja, hogy melyik állomás része legalább 5 
-  vasútvonalnak! Az állomás nevét és a vonalak számát jelenítse meg darabszám szerint 
-  csökkenő sorrendben!
+  Készítsen lekérdezést, amely megadja, hogy Hatvan mely állomásokról érhető el jelenleg 
+  vagy a múltban valamikor közvetlenül, azaz átszállás nélkül! Az állomás nevét és a vonal 
+  azonosítóját jelenítse meg! Hatvan neve ne szerepeljen a listában!
   
   ![F10](F10_IMG.PNG)
 
