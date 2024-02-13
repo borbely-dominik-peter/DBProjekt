@@ -11,7 +11,7 @@
 | orszag    | varchar(40) | Az állomás országa (szöveg)                                                                  |
 | mukodo    | tinyint(1)  | Az állomás működési állapota (logikai), ha működik, akkor értéke igaz                        |
 
-### hely(id, vonalid, allomasid, tav)
+### vonal(id, kisvasut, mukodo)
 | azonosító | típus       | leírás                                                                  |
 |-----------|-------------|-------------------------------------------------------------------------|
 | id        | varchar(40) | A vasútvonal azonosítója (szöveg), ez a kulcs                           |
