@@ -1,5 +1,31 @@
 # DBProjekt
 
+## Adatbázis táblák:
+
+### allomas(id, nev, tipus, orszag, mukodo)
+| azonosító | típus       | leírás                                                                                       |
+|-----------|-------------|----------------------------------------------------------------------------------------------|
+| id        | int(11)     | Az állomás azonosítója (szám), ez a kulcs                                                    |
+| nev       | varchar(40) | Az állomás neve (szöveg); a nevek egyediek                                                   |
+| tipus     | varchar(40) | Az állomás típusa (szöveg); megmutatja, hogy a vasúti forgalomban milyen szerepet töltött be |
+| orszag    | varchar(40) | Az állomás országa (szöveg)                                                                  |
+| mukodo    | tinyint(1)  | Az állomás működési állapota (logikai), ha működik, akkor értéke igaz                        |
+
+### vonal(id, kisvasut, mukodo)
+| azonosító | típus       | leírás                                                                  |
+|-----------|-------------|-------------------------------------------------------------------------|
+| id        | varchar(40) | A vasútvonal azonosítója (szöveg), ez a kulcs                           |
+| kisvasut  | tinyint(1)  | A vasútvonal típusát mutatja (logikai), értéke igaz, ha kisvasúti       |
+| mukodo    | tinyint(1)  | A vasútvonal állapotát mutatja (logikai), értéke hamis, ha felszámolták |
+
+### hely (id, vonalid, allomasid, tav)
+| azonosító | típus       | leírás                                                                                                                                                         |
+|-----------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id        | int(11)     | A vonal egy helyének azonosítója (szám), ez a kulcs                                                                                                            |
+| vonalid   | varchar(40) | Annak a vasútvonalnak az azonosítója, ahol a hely található (szöveg)                                                                                           |
+| allomasid | int(11)     | Annak az állomásnak az azonosítója, amelyik az adott helyen van (szám)                                                                                         |
+| tav       | int(11)     | A hely kilométerben mért távolsága a vonal indulási állomásától (szám) az indulási állomáshoz tartozó távolság 0 km. Értéke a hely km-rekerekített távolsága   |
+
 ## Adatbázis diagram:
 
 ![Adatbázis-Diagram](Diagram.PNG)
