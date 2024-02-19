@@ -52,7 +52,23 @@
 
 
 -- 9. feladat:
-
+    SELECT
+      vonalak.id,
+      allomasok.nev
+    FROM helyek
+      INNER JOIN allomasok
+        ON helyek.allomasId = allomasok.id
+      INNER JOIN vonalak
+        ON helyek.vonalId = vonalak.id
+    WHERE helyek.tav = 0 OR helyek.tav = (SELECT  
+      MAX(helyek.tav)
+    FROM helyek
+      INNER JOIN allomasok
+        ON helyek.allomasId = allomasok.id
+      INNER JOIN vonalak v2
+        ON helyek.vonalId = vonalak.id
+     WHERE v2.id = vonalak.id)
+     ORDER BY vonalak.id, helyek.tav;
 
 
 -- 10. feladat:

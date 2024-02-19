@@ -73,6 +73,9 @@
   ![F8](F8_IMG.PNG)
 
 ## 9. feladat:
+  Készítsen lekérdezést, hogy megadja az egyes vonalak azonosítóját, valamint az első és az utolsó állomását!
+
+  ![F9](F9_IMG.PNG)
 
 ## 10. feladat:
   Készítsen lekérdezést, amely megadja, hogy Hatvan mely állomásokról érhető el jelenleg 
