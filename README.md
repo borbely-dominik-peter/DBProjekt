@@ -1,5 +1,11 @@
 # DBProjekt
 
+A szárazföldi közlekedés a vasút megjelenésével indult ugrásszerű fejlődésnek. A magyar 
+gőzvontatású vasút története 1844-ben kezdődött. A vasúti hálózat egy évszázadig 
+folyamatosan terebélyesedett, azóta több hullámban zártak be vasútvonalakat részben vagy 
+egészben. Ritkábban az is előfordult, hogy újranyitottak vonalakat. Az adatbázis a 
+személyforgalmú vasútvonalak adatait tartalmazza. Az állomások a különböző vonalakon másmás helyet foglalhatnak el a kiindulási állomástól való távolságuk alapján. 
+
 ## Adatbázis táblák:
 
 ### allomas(id, nev, tipus, orszag, mukodo)
