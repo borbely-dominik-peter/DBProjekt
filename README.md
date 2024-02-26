@@ -1,4 +1,4 @@
-# DBProjekt
+# Vasútvonalak
 
 A szárazföldi közlekedés a vasút megjelenésével indult ugrásszerű fejlődésnek. A magyar 
 gőzvontatású vasút története 1844-ben kezdődött. A vasúti hálózat egy évszázadig 
@@ -8,6 +8,8 @@ személyforgalmú vasútvonalak adatait tartalmazza. Az állomások a különbö
 
 Az adatbázist a vasutvonalak.sql fájl futtatásával hozza létre.
 Megoldásait a megoldások.sql-be rögzítse, a feladat sorszáma után.
+
+Az adatbázis táblái és kapcsolatai az alábbiak.
 
 ## Adatbázis táblák:
 
