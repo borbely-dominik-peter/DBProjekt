@@ -75,7 +75,7 @@ Az adatbázis táblái és kapcsolatai az alábbiak.
   állomástól mért távolság sorrendjében megjeleníti a működő állomások nevét, típusát és az 
   indulási állomástól mért távolságát!
 
-  ![F7](F7_IMG.PNG)
+  ![F7](F7_IMG.png)
 
 ## 8. feladat:
   Készítsen lekérdezést, amely megadja az egyes vonalak hosszát, azaz az első és az utolsó 
