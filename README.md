@@ -68,7 +68,7 @@ Az adatbázis táblái és kapcsolatai az alábbiak.
   Magyarországon kívül található állomások nevét és ország jelét, az állomásnév szerint 
   ábécérendben! 
 
-  ![F6](F6_2IMG.png)
+  ![F6](F6_3IMG.png)
 
 ## 7. feladat:
   A 80-as vonal az egyik leghosszabb hazánkban. Készítsen lekérdezést, amely a kiinduló 
