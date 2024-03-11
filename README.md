@@ -43,7 +43,7 @@ Az adatbázis táblái és kapcsolatai az alábbiak.
 
 ## 2. feladat:
 
-  A MÁV 6 hónapra kibérelte a moszkvai vasúállomás 42. peronját.
+  A MÁV 6 hónapra kibérelte a moszkvai vasútállomás 42. peronját.
   Helyezze el ezt az új állomást a következő adatokkal.
   (5000, "Moszkva", "állomás", "RUS",0).
 
