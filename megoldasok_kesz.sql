@@ -49,52 +49,52 @@
     GROUP BY helyek.vonalId
     ORDER BY helyek.tav;
 
+﻿-- 9. feladat:
 
--- 9. feladat:
-    SELECT
-      vonalak.id,
-      allomasok.nev
-    FROM helyek
-      INNER JOIN allomasok
-        ON helyek.allomasId = allomasok.id
-      INNER JOIN vonalak
-        ON helyek.vonalId = vonalak.id
-    WHERE helyek.tav = 0 OR helyek.tav = (SELECT  
-      MAX(helyek.tav)
-    FROM helyek
-      INNER JOIN allomasok
-        ON helyek.allomasId = allomasok.id
-      INNER JOIN vonalak v2
-        ON helyek.vonalId = vonalak.id
-     WHERE v2.id = vonalak.id)
-     ORDER BY vonalak.id, helyek.tav;
-
+SELECT
+  v1.id, (SELECT
+  allomasok.nev
+FROM helyek
+  INNER JOIN allomasok
+    ON helyek.allomasId = allomasok.id
+  INNER JOIN vonalak
+    ON helyek.vonalId = vonalak.id
+WHERE vonalak.id = v1.id AND helyek.tav = 0) AS `Induló állomás`, (SELECT
+  allomasok.nev
+FROM helyek
+  INNER JOIN allomasok
+    ON helyek.allomasId = allomasok.id
+  INNER JOIN vonalak
+    ON helyek.vonalId = vonalak.id
+WHERE vonalak.id = v1.id
+ORDER BY helyek.tav DESC
+LIMIT 1) AS `Végállomás`
+FROM vonalak AS v1;
 
 -- 10. feladat:
-    SELECT
-      allomasok.nev,
-      helyek.vonalId,
-      helyek.allomasId
-    FROM helyek
-      INNER JOIN allomasok
-        ON helyek.allomasId = allomasok.id
-      INNER JOIN vonalak
-        ON helyek.vonalId = vonalak.id
-    WHERE helyek.vonalId = "80" AND allomasok.nev NOT LIKE "Hatvan";
-
+SELECT
+  allomasok.nev,
+  helyek.vonalId
+FROM helyek
+  INNER JOIN allomasok
+    ON helyek.allomasId = allomasok.id
+WHERE helyek.vonalId IN (SELECT
+  helyek.vonalId
+FROM helyek
+  INNER JOIN allomasok
+    ON helyek.allomasId = allomasok.id
+WHERE allomasok.nev = "Hatvan") AND allomasok.nev <> "Hatvan";
 
 -- 11. feladat:
-    SELECT
-      allomasok.nev,
-      COUNT(helyek.vonalId) AS db
-    FROM helyek
-      INNER JOIN allomasok
-        ON helyek.allomasId = allomasok.id
-    GROUP BY allomasok.nev
-    HAVING db >= 5
-    ORDER BY db DESC;
-
-
+SELECT
+  allomasok.nev,
+  COUNT(helyek.vonalId) AS db
+FROM helyek
+  INNER JOIN allomasok
+    ON helyek.allomasId = allomasok.id
+GROUP BY allomasok.nev
+HAVING db >= 5
+ORDER BY db DESC;
 
 -- 12. feladat:
     SELECT
