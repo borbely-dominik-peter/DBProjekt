@@ -13,11 +13,17 @@
     WHERE id = 5000;
 
 -- 5. feladat:
-    DELETE FROM helyek
-    WHERE allomasid = 2324;
+  DELETE FROM helyek
+  WHERE allomasId = (SELECT
+    allomasok.id
+  FROM allomasok
+  WHERE allomasok.nev = 'Szeged-Feketehalom');
 
-    DELETE FROM allomasok
-    WHERE id = 2324;
+  DELETE FROM allomasok
+  WHERE id = (SELECT
+    allomasok.id
+  FROM allomasok
+  WHERE allomasok.nev = 'Szeged-Feketehalom');
 -- 6. feladat:
     SELECT
       allomasok.orszag,
